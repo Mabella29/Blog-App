@@ -20,12 +20,12 @@ function Signup() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
       <form
         onSubmit={handleSignup}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-96"
+        className="bg-white shadow-md rounded px-8 pt-6 pb-8 w-full max-w-md"
       >
-        <h2 className="text-2xl mb-4 text-center">Signup</h2>
+        <h2 className="text-2xl mb-4 text-center">Sign Up</h2>
         {error && <p className="text-red-500 text-sm mb-3">{error}</p>}
         <input
           type="email"
@@ -45,7 +45,7 @@ function Signup() {
         />
         <button
           type="submit"
-          className="bg-blue-600 text-white px-4 py-2 w-full rounded hover:bg-blue-500"
+          className="bg-green-600 text-white px-4 py-2 w-full rounded hover:bg-green-500 transition"
         >
           Sign Up
         </button>
